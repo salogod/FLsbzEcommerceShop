@@ -37,6 +37,34 @@
           
         }
 
+        .footer-text {
+          text-align: center;
+          color: black;
+        }
+
+        .button {
+    width: 160px; /* Ancho predeterminado */
+    display: flex;
+    margin-left: 30px; /* Margen izquierdo predeterminado */
+    align-items: center;
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 600px) {
+    .button {
+        width: 140px; /* Ancho más pequeño para móviles */
+        margin-left: 15px; /* Menor margen izquierdo para móviles */
+    }
+}
+
+/* Puedes añadir más consultas de medios para diferentes rangos de tamaño */
+@media (max-width: 1024px) {
+    .button {
+        width: 140px; /* Ancho ajustado para tablets */
+        margin-left: 15px; /* Margen izquierdo ajustado para tablets */
+    }
+}
+
   </style>
 </head>
 <body>
@@ -74,26 +102,40 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc1.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Neon Edge Warrior
+      <div class="panel">
+        <div class="panel"><img src="img/pc1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Edge Warrior</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
+    
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc2.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Samurai Zen Station
+      <div class="panelt">
+        <div class="panel"><img src="img/pc2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Samurai Zen Stationr</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
+    
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc3.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Nature's Harmony Rig
+      <div class="panel">
+        <div class="panel"><img src="img/pc3.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Nature's Harmony Rig</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
@@ -103,28 +145,39 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc4.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Monochrome Mastery
+      <div class="panel">
+        <div class="panel"><img src="img/pc4.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Monochrome Mastery</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc5.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Cosmos Voyager Elite
+      <div class="panel">
+        <div class="panel"><img src="img/pc5.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Cosmos Voyager Elite</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
-      </div>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/pc6.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Neon Station
+      <div class="panel">
+        <div class="panel"><img src="img/pc6.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Neon Station</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -133,26 +186,40 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/comp1.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Procesador Intel i7
+      <div class="panel">
+        <div class="panel"><img src="img/comp1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">Procesador Intel i7</h4></div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/comp2.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"> AMD Radeon RX 6600
+      <div class="panel">
+        <div class="panel"><img src="img/comp2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">AMD Radeon RX 6600</h4> 
+        </div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-default">
-        <div class="panel-body"><img src="img/comp3.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">GIGABYTE B550M DS3H
+      <div class="panel">
+        <div class="panel"><img src="img/comp3.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel"><h4 class="footer-text">GIGABYTE B550M DS3H</h4>
+        </div>
+        <div class="button">
           <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+          <div class="button">
+            <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
