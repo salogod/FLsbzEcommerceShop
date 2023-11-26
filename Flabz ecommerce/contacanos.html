@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FantazyLabzShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="csss/footer.css">
+  <link rel="shortcut icon" href="img/logo.jpg">
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    .logo {
+    float: right;
+}
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+   
+        .jumbotron {
+            background-image: url('img/back1.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 400px;
+          
+        }
+
+        .footer-text {
+          text-align: center;
+          color: black;
+        }
+
+        .button {
+    width: 160px; /* Ancho predeterminado */
+    display: flex;
+    margin-left: 30px; /* Margen izquierdo predeterminado */
+    align-items: center;
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 600px) {
+    .button {
+        width: 140px; /* Ancho más pequeño para móviles */
+        margin-left: 15px; /* Menor margen izquierdo para móviles */
+        align-items: center;
+    }
+}
+
+/* Puedes añadir más consultas de medios para diferentes rangos de tamaño */
+@media (max-width: 1024px) {
+    .button {
+        width: 140px; /* Ancho ajustado para tablets */
+        margin-left: 15px; /* Margen izquierdo ajustado para tablets */
+    }
+}
+
+  </style>
+</head>
+<body>
+
+
+<div class="jumbotron">
+  <div class="container text-center">  
+    <a class="logo" href="./index.html"><img src="img/logo2.png" alt="" width=auto height="200" /></a>   
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Tiendas</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<a name="footer"></a>
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <h3>Sobre</h3>
+            <a><i class="fas fa-map-marker-alt"></i> Monterrey, Nuevo León</a>
+            <a><i class="fas fa-map-marker-alt"></i> Flabz se destaca como una empresa innovadora y dedicada en el sector de la construcción, especializándose en la creación de construcciones personalizadas de alta calidad</a>
+            
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <h3>Links Rapidos</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> Principal</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Productos</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Preguntas</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Carrito</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Contacto</h3>
+            <a href="#"><i class="fas fa-phone"></i> +81 3477 9998</a>
+            <a href="#">
+                <i class="fas fa-envelope"></i> proyectos@fantazylabz.tech
+            </a>
+            <a href="https://www.google.com/maps/@25.7040763,-100.2648647,3a,75y,106.06h,90t/data=!3m6!1e1!3m4!1s0x3tFm9JQxZZjhEJujPwHw!2e0!7i16384!8i8192?entry=ttu">
+                <i class="fas fa-map-marker-alt"></i> Sierra Morena #101, San
+                Nicolas de los Garza
+            </a>
+            <a href="#" onclick="event.preventDefault(); openForm();">
+              <i class="fas fa-arrow-right"></i> Contacta a un experto
+              <i class="fa-solid fa-angle-down" id="open-form"></i>
+          </a>
+          
+
+</body>
+</html>
