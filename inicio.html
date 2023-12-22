@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANTAZY LABZ SHOP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/inicio/icono.png">
+   
+
+
+    
+   
+</head>
+<body>
+
+
+    <style>
+
+        #ofertas{
+            display: flex;        /* Use flexbox layout */
+            justify-content: center; /* Center horizontally in the flex container */
+            align-items: center;    /* Center vertically in the flex container */
+            height: 100%;        /* Set a height for the container */
+        }
+
+        .contenedor-carrito{
+ 
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 500vh;           /* Set a height for the container, adjust as needed */
+        }
+
+        #ofertas {
+            max-width: 100%;         /* Ensure the image doesn't exceed the width of its container */
+            height: auto;            /* Maintain the aspect ratio of the image */
+        }
+
+    </style>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <a class="logo" href=""><img src="./img/inicio/logo.png" alt="" width="253" height="222"/></a>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver active" href="./productos.html">
+                            <i class="bi bi-house-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./productos.html">
+                            <i class="bi bi-person-circle"></i> Perfil
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./productos.html">
+                            <i class="bi bi-envelope-plus"></i> Contactanos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./productos.html">
+                            <i class="bi bi-pc-display-horizontal"></i> Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./productos.html">
+                            <i class="bi bi-clipboard-data"></i> Nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carritos
+                        </a>
+                    </li>
+                </ul>
+                
+            <footer>
+                <p class="texto-footer">© 2023 FANTAZY LABZ SHOP</p>
+            </footer>
+        </aside>
+        <main>
+           
+            <div class="contenedor-carrito">
+
+                <a class="logo" id="inicio" href=""><img src="./img/inicio/back.PNG" /></a>
+                
+                <a class="logo" id="ofertas" href=""><img src="./img/inicio/ofertas.png" /></a>
+
+               
+                
+
+                
+                
+                <a name="footer"></a>
+
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <h3>Sobre</h3>
+            <a><i class="fas fa-map-marker-alt"></i> Monterrey, Nuevo León</a>
+            <a><i class="fas fa-map-marker-alt"></i> Flabz se destaca como una empresa innovadora y dedicada en el sector de la construcción, especializándose en la creación de construcciones personalizadas de alta calidad</a>
+            
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <h3>Links Rapidos</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> Principal</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Productos</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Preguntas</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Carrito</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Contacto</h3>
+            <a href="#"><i class="fas fa-phone"></i> +81 3477 9998</a>
+            <a href="#">
+                <i class="fas fa-envelope"></i> proyectos@fantazylabz.tech
+            </a>
+            <a href="https://www.google.com/maps/@25.7040763,-100.2648647,3a,75y,106.06h,90t/data=!3m6!1e1!3m4!1s0x3tFm9JQxZZjhEJujPwHw!2e0!7i16384!8i8192?entry=ttu">
+                <i class="fas fa-map-marker-alt"></i> Sierra Morena #101, San
+                Nicolas de los Garza
+            </a>
+            <a href="#" onclick="event.preventDefault(); openForm();">
+              <i class="fas fa-arrow-right"></i> Contacta a un experto
+              <i class="fa-solid fa-angle-down" id="open-form"></i>
+          </a>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+</body>
+</html>
