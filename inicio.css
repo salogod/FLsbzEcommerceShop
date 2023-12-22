@@ -1,0 +1,178 @@
+h5{
+    font-family: arial;
+    font-weight: 600;
+}
+
+h6{
+    font-family: arial;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transform: translateY(30px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  h1{
+    font-family: arial;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    transform: translateY(30px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+/* codigo de la cabecera*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #1B1B1B;
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  font-family: arial;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1B1B1B;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+
+  display: inline-block;
+padding: 7px 20px;
+background-color: #868376;
+color: #1B1B1B;
+text-decoration: none;
+border-radius: 5px;
+font-size: 18px;
+font-family: Arial;
+  
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #1B1B1B;
+}
+
+
+/* codigo para imagen slide*/
+.slider{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
+
+/* productos imagen url*/
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagen {
+    margin: 5px;
+    position: relative;
+    max-width: 406px;
+    height: 210px;
+    overflow: hidden;
+  }
+  
+  .imagen:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  
+  .imagen img {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .imagen span {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+ 
+
+ 

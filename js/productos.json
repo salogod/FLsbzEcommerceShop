@@ -1,0 +1,33 @@
+[
+    {
+        "id": "1",
+        "titulo": "Procesador Intel Core i3-12100 3.3GHz",
+        "imagen": "./img/Procesador Intel Core i3-12100 3.3GHz.jpg",
+        "categoria": {
+            "nombre": "procesador",
+            "id": "procesador"
+        },
+        "precio": 2000
+    },
+    {
+        "id": "2",
+        "titulo": "Procesador Intel Core i9-13900F",
+        "imagen": "./img/consola/02.jpg",
+        "categoria": {
+            "nombre": "procesador",
+            "id": "procesador"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "3",
+        "titulo": "Procesador Intel Core i5-13400F",
+        "imagen": "./img/consola/03.jpg",
+        "categoria": {
+            "nombre": "procesador",
+            "id": "procesador"
+        },
+        "precio": 3000
+    },
+{}
+]
