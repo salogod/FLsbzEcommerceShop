@@ -7,37 +7,62 @@
     <title>FANTAZY LABZ SHOP</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./img/inicio/icono.png">
+    <link rel="stylesheet" href="footer.css">
    
 
-
-    
-   
 </head>
 <body>
-
-
     <style>
+        #slide{
+            font-size: medium;
+        }
+
 
         #ofertas{
             display: flex;        /* Use flexbox layout */
             justify-content: center; /* Center horizontally in the flex container */
             align-items: center;    /* Center vertically in the flex container */
             height: 100%;        /* Set a height for the container */
+            margin: 100px;
         }
 
         .contenedor-carrito{
  
             justify-content: center; /* Center horizontally */
             align-items: center;     /* Center vertically */
-            height: 500vh;           /* Set a height for the container, adjust as needed */
+            height: 350vh;           /* Set a height for the container, adjust as needed */
         }
 
         #ofertas {
             max-width: 100%;         /* Ensure the image doesn't exceed the width of its container */
             height: auto;            /* Maintain the aspect ratio of the image */
         }
+
+
+        @media (max-width: 550px) {
+    .contenedor-carrito {
+        height: 800vh;
+    }
+}
+
+#footer {
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Set the background color as needed */
+    color: #fff; /* Set the text color as needed */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+
+
+
 
     </style>
 
@@ -56,34 +81,34 @@
                 <a class="logo" href=""><img src="./img/inicio/logo.png" alt="" width="253" height="222"/></a>
             </header>
             <nav>
-                <ul>
+                <ul id="slide">
                     <li>
-                        <a class="boton-menu boton-volver active" href="./productos.html">
+                        <a class="boton-menu boton-volver active" href="./productos.html "  style="font-size: medium;">
                             <i class="bi bi-house-fill"></i> Inicio
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-volver" href="./productos.html">
+                        <a class="boton-menu boton-volver" href="./productos.html "  style="font-size: medium;">
                             <i class="bi bi-person-circle"></i> Perfil
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-volver" href="./productos.html">
+                        <a class="boton-menu boton-volver" href="./productos.html" style="font-size: medium;">
                             <i class="bi bi-envelope-plus"></i> Contactanos
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-volver" href="./productos.html">
+                        <a class="boton-menu boton-volver" href="./productos.html"  style="font-size: medium;">
                             <i class="bi bi-pc-display-horizontal"></i> Productos
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-volver" href="./productos.html">
+                        <a class="boton-menu boton-volver" href="./productos.html"  style="font-size: medium;">
                             <i class="bi bi-clipboard-data"></i> Nosotros
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                        <a class="boton-menu boton-carrito" href="./carrito.html"  style="font-size: medium;">
                             <i class="bi bi-cart-fill"></i> Carritos
                         </a>
                     </li>
@@ -97,18 +122,141 @@
            
             <div class="contenedor-carrito">
 
-                <a class="logo" id="inicio" href=""><img src="./img/inicio/back.PNG" /></a>
+                <a class="logo" id="inicio" href="" style="border-radius: 15%;"><img src="./img/inicio/back.PNG" /></a>
                 
                 <a class="logo" id="ofertas" href=""><img src="./img/inicio/ofertas.png" /></a>
 
-               
-                
+              
+                  <div class="container">    
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="panel">
+                          <div class="panel"><img src="img/pc1.png" class="img-responsive" style="width:100% ; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Edge Warrior</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-4"> 
+                        <div class="panelt">
+                          <div class="panel"><img src="img/pc2.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Samurai Zen Stationr</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-4"> 
+                        <div class="panel">
+                          <div class="panel"><img src="img/pc3.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Nature's Harmony Rig</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><br>
+                  
+                  <div class="container">    
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="panel">
+                          <div class="panel"><img src="img/pc4.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Monochrome Mastery</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"> 
+                        <div class="panel">
+                          <div class="panel"><img src="img/pc5.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Cosmos Voyager Elite</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"> 
+                        <div class="panel">
+                          <div class="panel"><img src="img/pc6.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Neon Station</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><br>
+                  
+                  <div class="container">    
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="panel">
+                          <div class="panel"><img src="img/comp1.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">Procesador Intel i7</h4></div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"> 
+                        <div class="panel">
+                          <div class="panel"><img src="img/comp2.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">AMD Radeon RX 6600</h4> 
+                          </div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"> 
+                        <div class="panel">
+                          <div class="panel"><img src="img/comp3.png" class="img-responsive" style="width:100%; border-radius: 5%;" alt="Image"></div>
+                          <div class="panel"><h4 class="footer-text">GIGABYTE B550M DS3H</h4>
+                          </div>
+                          <div class="button">
+                            <button type="button" class="btn btn-outline-secondary">Ver mas</button>
+                            <div class="button">
+                              <button type="button" class="btn btn-outline-secondary">Añadir al Carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><br><br>
+                  
+                  
 
-                
-                
                 <a name="footer"></a>
-
-
 <section class="footer" id="footer">
 
     <div class="box-container">
